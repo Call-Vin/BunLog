@@ -1,0 +1,19 @@
+{
+  "name": "bunlog",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "mig": "rm -rf prisma/migrations && bunx prisma generate && bunx prisma migrate dev --name init"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^6.4.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "hono": "^4.7.2"
+  }
+}
